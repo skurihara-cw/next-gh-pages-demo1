@@ -13,7 +13,8 @@ if (isGithubActions) {
 const nextConfig = {
   reactStrictMode: true,
   assetPrefix: assetPrefix,
-  basePath: basePath,
+  basePath: basePath, // github actions側でよしなにできるかも
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
